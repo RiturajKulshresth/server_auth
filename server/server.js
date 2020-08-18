@@ -18,6 +18,8 @@ const {authenticate}=require('./middleware/authenticate')
 const { User } = require("./models/user");
 
 //Routes
+
+
 app.post("/api/user", (req, res) => {
   const user = new User({
     email: req.body.email,
